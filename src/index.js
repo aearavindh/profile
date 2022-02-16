@@ -1,14 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import Home from "./routes/Home";
+import Languages from "./routes/Languages";
+import Education from "./routes/Education";
+import Employment from "./routes/Employment";
+import Projects from "./routes/Projects";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <React.StrictMode>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="home" element={<Home />} />
+          <Route path="languages" element={<Languages />} />
+          <Route path="education" element={<Education />} />
+          <Route path="employment" element={<Employment />} />
+          <Route path="projects" element={<Projects />} />
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
+        </Route>
+      </Routes>
+    </React.StrictMode>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
