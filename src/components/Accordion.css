@@ -1,0 +1,27 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.accordion__header {
+    display: flex;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.accordion__header:hover {
+    opacity: 0.9;
+}
+
+.accordion__body {
+    display: block;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    transition: opacity 1s;
+}
