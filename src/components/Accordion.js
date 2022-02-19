@@ -5,7 +5,7 @@ import "./Accordion.css";
 function Accordion({ body, children }) {
   const [active, setActive] = useState(false);
   return (
-    <div accordion className="accordion">
+    <div className="accordion">
       <div onClick={() => setActive(!active)} className="accordion__header">
         <h3>{children}</h3>
         {active ? <Remove /> : <Add />}

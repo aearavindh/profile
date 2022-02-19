@@ -1,10 +1,30 @@
 import React from "react";
 import "./Tile.css";
 
-function Tile({title, width, height}) {
-  return <div style={{width: width, height: height}} className="tile">
+function Tile({ title, width, height, background, onClick }) {
+  const style = { width: width, height: height };
+
+  return (
+    <div
+      onClick={onClick}
+      style={
+        background
+          ? {
+              ...style,
+              backgroundImage:
+                "linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.8))," +
+                "url(" +
+                background +
+                ")",
+              backgroundSize: width + " " + height,
+            }
+          : { ...style, backgroundColor: "gray" }
+      }
+      className="tile"
+    >
       <h3>{title}</h3>
-  </div>;
+    </div>
+  );
 }
 
 export default Tile;
