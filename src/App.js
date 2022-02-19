@@ -1,11 +1,18 @@
+import { LinkedIn } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
 import { NavLink, Outlet } from "react-router-dom";
 import "./App.css";
+import { links } from "./constants/Constants";
 
 function App() {
   const navLinkActiveStyles = ({ isActive }) =>
     isActive
       ? { backgroundColor: "white", color: "black", fontWeight: "600" }
       : {};
+
+  const openLink = (link) => {
+    window.open(links[link], "_blank");
+  };
 
   return (
     <div className="app">
@@ -43,6 +50,15 @@ function App() {
         </NavLink>
       </nav>
       <Outlet />
+      <div className="app__footer">
+        <IconButton
+          onClick={() => {
+            openLink("linkedIn");
+          }}
+        >
+          <LinkedIn color="primary" />
+        </IconButton>
+      </div>
     </div>
   );
 }

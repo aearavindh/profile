@@ -15,6 +15,7 @@ ReactDOM.render(
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="languages" element={<Languages />} />
           <Route path="education" element={<Education />} />
@@ -23,8 +24,15 @@ ReactDOM.render(
           <Route
             path="*"
             element={
-              <main style={{ padding: "1rem" }}>
-                <p>There's nothing here!</p>
+              <main
+                style={{
+                  padding: "1rem",
+                  display: "grid",
+                  placeItems: "center",
+                  height: "80vh",
+                }}
+              >
+                <p>Ohh! Nothing to show here...</p>
               </main>
             }
           />

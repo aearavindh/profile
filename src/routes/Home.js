@@ -1,5 +1,5 @@
 import React from "react";
-import AravindhImage from "../assets/images/aearavindh.jpg";
+import AravindhImage from "../assets/images/aearavindh-transparent.png";
 import "./Home.css";
 
 function Home() {
