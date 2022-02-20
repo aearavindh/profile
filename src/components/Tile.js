@@ -12,7 +12,7 @@ function Tile({ title, width, height, background, onClick }) {
           ? {
               ...style,
               backgroundImage:
-                "linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.8))," +
+                "linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5))," +
                 "url(" +
                 background +
                 ")",

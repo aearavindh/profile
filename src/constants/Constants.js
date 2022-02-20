@@ -1,5 +1,6 @@
 const projects = {
   ticTacToe: "https://aearavindh.github.io/Tic-Tac-Toe",
+  linkedinClone: "https://aearavindh.tk"
 };
 
 const links = {
