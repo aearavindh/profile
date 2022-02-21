@@ -2,8 +2,7 @@ import React from "react";
 import Tile from "../components/Tile";
 import "./Projects.css";
 import { projects } from "../constants/Constants";
-import TicTacToeImage from "../assets/images/projects/tic-tac-toe.png";
-import LinkedinCloneImage from "../assets/images/projects/linkedin-clone.png";
+import projectsList from "../constants/Projects";
 
 function Projects() {
   const width = "20vw";
@@ -15,24 +14,18 @@ function Projects() {
 
   return (
     <div className="projects">
-      <Tile
-        onClick={function () {
-          openProject("ticTacToe");
-        }}
-        title="Tic Tac Toe"
-        width={width}
-        height={height}
-        background={TicTacToeImage}
-      />
-      <Tile
-        onClick={function () {
-          openProject("linkedinClone");
-        }}
-        title="LinkedIn Clone"
-        width={width}
-        height={height}
-        background={LinkedinCloneImage}
-      />
+      {projectsList.map((project) => (
+        <Tile
+          key={project.key}
+          onClick={function () {
+            openProject(project.key);
+          }}
+          title={project.title}
+          width={width}
+          height={height}
+          background={project.background}
+        />
+      ))}
     </div>
   );
 }
