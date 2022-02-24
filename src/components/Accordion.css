@@ -1,7 +1,8 @@
 .accordion {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 40vw;
+    margin: 0.5px;
 }
 
 .accordion__header {
@@ -11,7 +12,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
 }
 
 .accordion__header:hover {
@@ -22,6 +24,11 @@
     display: block;
     background-color: gray;
     padding: 10px;
-    border-radius: 10px;
-    transition: opacity 1s;
+    border-radius: 0 0 10px 10px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1; }
 }

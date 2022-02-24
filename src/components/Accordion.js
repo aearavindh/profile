@@ -6,7 +6,7 @@ function Accordion({ body, children }) {
   const [active, setActive] = useState(false);
   return (
     <div className="accordion">
-      <div onClick={() => setActive(!active)} className="accordion__header">
+      <div onClick={() => setActive(!active)} className="accordion__header" style={active ? { borderRadius: "10px 10px 0 0" } : {}}>
         <h3>{children}</h3>
         {active ? <Remove /> : <Add />}
       </div>
