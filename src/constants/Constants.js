@@ -7,6 +7,8 @@ const projects = {
 
 const links = {
   linkedIn: "https://www.linkedin.com/in/aearavindh",
+  github: "https://www.github.com/aearavindh",
+  instagram: "https://www.instagram.com/aravindh_ae"
 };
 
 export { projects, links };

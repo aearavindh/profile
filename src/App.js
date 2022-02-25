@@ -1,4 +1,4 @@
-import { LinkedIn } from "@mui/icons-material";
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import { NavLink, Outlet } from "react-router-dom";
 import "./App.css";
@@ -57,6 +57,20 @@ function App() {
           }}
         >
           <LinkedIn color="primary" />
+        </IconButton>
+        <IconButton
+          onClick={() => {
+            openLink("github");
+          }}
+        >
+          <GitHub color="primary" />
+        </IconButton>
+        <IconButton
+          onClick={() => {
+            openLink("instagram");
+          }}
+        >
+          <Instagram color="primary" />
         </IconButton>
       </div>
     </div>
