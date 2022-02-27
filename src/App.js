@@ -16,7 +16,7 @@ import { links } from "./constants/Constants";
 function App() {
   const navLinkActiveStyles = ({ isActive }) =>
     isActive
-      ? { backgroundColor: "white", color: "black", fontWeight: "600" }
+      ? { backgroundColor: "white", color: "black", fontWeight: "600", boxShadow: "0px 0px 5px black" }
       : {};
 
   const openLink = (link) => {
