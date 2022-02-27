@@ -1,0 +1,22 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.content__title {
+  text-align: center;
+}
+
+.content__key {
+  color: gray;
+  font-size: 13px;
+}
+
+.content__value {
+    font-size: 13px;
+}
+
+ul {
+    list-style: none;
+}
