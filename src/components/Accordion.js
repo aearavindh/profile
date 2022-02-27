@@ -2,14 +2,12 @@ import { Add, Remove } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Accordion.css";
 
-function Accordion({ body, children }) {
+function Accordion({ Icon, body, children }) {
   const [active, setActive] = useState(false);
   return (
     <div className="accordion">
-      <div
-        onClick={() => setActive(!active)}
-        className="accordion__header"
-      >
+      <div onClick={() => setActive(!active)} className="accordion__header">
+        {Icon}
         <h3>{children}</h3>
         {active ? <Remove /> : <Add />}
       </div>

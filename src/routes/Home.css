@@ -1,18 +1,28 @@
 .home {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
 }
 
-.home > img {
-    object-fit: contain;
-    width: 25%;
-    height: 25%;
-    border-radius: 20%;
-    padding: 30px;
+.home__left {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.home > h1, .home > h3 {
-    color: gray;
+.home__right {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.home__left > img {
+  object-fit: contain;
+  width: 40%;
+  height: 40%;
+}
+
