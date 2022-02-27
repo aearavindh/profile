@@ -2,47 +2,47 @@ import React from "react";
 import "./Skills.css";
 import skills from "../constants/Skills";
 
-function Content() {
+function Skills() {
   return (
-    <div className="content">
-      <ul>
+    <div className="skills">
+      <ul className="skills__list">
         <li>
-          <span className="content__key">Programming Languages:</span>{" "}
-          <span className="content__value">{skills.programmingLanguages}</span>
+          <span className="skills__key">Programming Languages:</span>{" "}
+          <span className="skills__value">{skills.programmingLanguages}</span>
         </li>
         <li>
-          <span className="content__key">Operating Systems:</span>{" "}
-          <span className="content__value">{skills.operatingSystems}</span>
+          <span className="skills__key">Operating Systems:</span>{" "}
+          <span className="skills__value">{skills.operatingSystems}</span>
         </li>
         <li>
-          <span className="content__key">Database:</span>{" "}
-          <span className="content__value">{skills.database}</span>
+          <span className="skills__key">Database:</span>{" "}
+          <span className="skills__value">{skills.database}</span>
         </li>
         <li>
-          <span className="content__key">Frameworks and Libraries:</span>{" "}
-          <span className="content__value">
+          <span className="skills__key">Frameworks and Libraries:</span>{" "}
+          <span className="skills__value">
             {skills.frameworksAndLibraries}
           </span>
         </li>
         <li>
-          <span className="content__key">Tools:</span>{" "}
-          <span className="content__value">{skills.tools}</span>
+          <span className="skills__key">Tools:</span>{" "}
+          <span className="skills__value">{skills.tools}</span>
         </li>
         <li>
-          <span className="content__key">Cloud:</span>{" "}
-          <span className="content__value">{skills.cloud}</span>
+          <span className="skills__key">Cloud:</span>{" "}
+          <span className="skills__value">{skills.cloud}</span>
         </li>
         <li>
-          <span className="content__key">container:</span>{" "}
-          <span className="content__value">{skills.container}</span>
+          <span className="skills__key">container:</span>{" "}
+          <span className="skills__value">{skills.container}</span>
         </li>
         <li>
-          <span className="content__key">Others:</span>{" "}
-          <span className="content__value">{skills.others}</span>
+          <span className="skills__key">Others:</span>{" "}
+          <span className="skills__value">{skills.others}</span>
         </li>
       </ul>
     </div>
   );
 }
 
-export default Content;
+export default Skills;

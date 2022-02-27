@@ -1,22 +1,21 @@
-.content {
+.skills {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 
-.content__title {
+.skills__title {
   text-align: center;
 }
 
-.content__key {
+.skills__key {
   color: gray;
   font-size: 13px;
 }
 
-.content__value {
+.skills__value {
     font-size: 13px;
 }
 
-ul {
+.skills__list {
     list-style: none;
 }

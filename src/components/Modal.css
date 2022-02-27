@@ -1,7 +1,7 @@
 .modal__backdrop {
     position: fixed;
-    background-color: gray;
-    opacity: 0.6;
+    background-color: #f5f5f5;
+    opacity: 0.2;
     inset: 0 0 0 0;
     cursor: pointer;
     transition: 3s;
