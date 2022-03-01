@@ -16,7 +16,12 @@ import { links } from "./constants/Constants";
 function App() {
   const navLinkActiveStyles = ({ isActive }) =>
     isActive
-      ? { backgroundColor: "white", color: "black", fontWeight: "600", boxShadow: "0px 0px 5px black" }
+      ? {
+          backgroundColor: "white",
+          color: "black",
+          fontWeight: "600",
+          boxShadow: "0px 0px 5px black",
+        }
       : {};
 
   const openLink = (link) => {
@@ -63,7 +68,9 @@ function App() {
           <p>Projects</p>
         </NavLink>
       </nav>
-      <Outlet />
+      <div className="app__outlet">
+        <Outlet />
+      </div>
       <div className="app__footer">
         <IconButton
           onClick={() => {
