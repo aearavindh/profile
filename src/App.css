@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  overflow: auto;
 }
 
 .app__link {
@@ -31,6 +32,16 @@
   transition: font-size 1s;
 }
 
+@media only screen and (max-width: 600px) {
+  .app__link > p {
+    display: none;
+  }
+}
+
+.app__outlet {
+  z-index: 1;
+}
+
 .app__footer {
   height: 8vh;
   background-color: black;
@@ -41,5 +52,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1;
+  overflow: auto;
+  z-index: 2;
 }

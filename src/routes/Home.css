@@ -1,7 +1,13 @@
 .home {
   height: 80vh;
   display: flex;
-  flex-direction: row;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+      flex-direction: column;
+  }
 }
 
 .home__left {
@@ -20,6 +26,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
+  overflow: auto;
 }
 
 .home__left > img {

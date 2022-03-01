@@ -37,4 +37,11 @@
 
 .tile > h3 {
   color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .tile {
+    width: 60vw !important;
+  }
 }

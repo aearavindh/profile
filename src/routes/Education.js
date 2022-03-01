@@ -11,7 +11,7 @@ function Education() {
         High School
       </Accordion>
       <Accordion
-        Icon={<FaSchool />}
+        Icon={<FaSchool size={20} style={{ paddingLeft: "3px" }} />}
         body="Arunachalam Higher Secondary School, Thiruvattar"
       >
         Higher Secondary
