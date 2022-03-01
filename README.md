@@ -1,7 +1,7 @@
-# My Profile
+# Aravindh AE
 
 My profile using React.
 
-## Aravindh AE
+### `Live`
 
-### `Dev In Progress`
+## [aearavindh](https://aearavindh.github.io)
