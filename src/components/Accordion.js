@@ -1,8 +1,8 @@
-import { Add, Remove } from "@mui/icons-material";
+import { Add, CreditScore, Remove } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Accordion.css";
 
-function Accordion({ Icon, body, children }) {
+function Accordion({ Icon, body, children, percentage, cgpa }) {
   const [active, setActive] = useState(false);
   return (
     <div className="accordion">
@@ -20,6 +20,10 @@ function Accordion({ Icon, body, children }) {
         className="accordion__body"
       >
         <p style={active ? { opacity: 1 } : { opacity: 0 }}>{body}</p>
+        <div className="accordion__score">
+          <CreditScore />
+          <p>{percentage ? percentage + "%" : cgpa + " CGPA"}</p>
+        </div>
       </div>
     </div>
   );

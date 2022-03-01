@@ -7,18 +7,20 @@ import { FaSchool } from "react-icons/fa";
 function Education() {
   return (
     <div className="education">
-      <Accordion Icon={<HistoryEdu />} body="Devaswom High School, Thirparappu">
+      <Accordion Icon={<HistoryEdu />} body="Devaswom High School, Thirparappu, Kanyakumari" percentage={95.2}>
         High School
       </Accordion>
       <Accordion
         Icon={<FaSchool size={20} style={{ paddingLeft: "3px" }} />}
-        body="Arunachalam Higher Secondary School, Thiruvattar"
+        body="Arunachalam Higher Secondary School, Thiruvattar, Kanyakumari"
+        percentage={93.08}
       >
         Higher Secondary
       </Accordion>
       <Accordion
         Icon={<School />}
-        body="University College of Engineering, Villupuram"
+        body="B.E in Computer Science from University College of Engineering, Villupuram"
+        cgpa={7.19}
       >
         College
       </Accordion>
