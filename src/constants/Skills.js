@@ -1,13 +1,11 @@
 const skills = {
-  programmingLanguages: "Java, JavaScript, C, C++, Python",
-  operatingSystems: "Linux, Windows, Android",
-  database: "MySQL, MongoDB",
+  programmingLanguages: "Java, JavaScript, SQL, Python, C, C++",
+  database: "MySQL, MongoDB, Redis",
   frameworksAndLibraries:
-    "React JS, SAP Hybris, Spring Boot, Spring Cloud, Spring Security, Hibernate, Angular, Junit and Mockito",
-  tools: "Jenkins, SonarQube, Nexus, Nexus IQ Server",
-  cloud: "AWS (IaaS), Firebase (PaaS), PCF (PaaS)",
-  container: "Docker, Docker Swarm",
-  others: "Jira, Docker, Docker Swarm,Gitlab CI, Git, Maven",
+    "React JS, React Native, SAP Hybris, Spring Boot, Spring Cloud, Spring Security, Hibernate, Angular, Junit and Mockito",
+  tools: "Jenkins, SonarQube, Nexus, Nexus IQ Server, Jira, Gitlab CI, Git, Maven, NPM",
+  cloudAndContainer: "Docker, Docker Swarm, AWS (IaaS), Firebase (PaaS), PCF (PaaS)",
+  others: "Microservices, RESTful web services",
 };
 
 export default skills;

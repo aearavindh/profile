@@ -1,6 +1,7 @@
-import { Email, LocationCity } from "@mui/icons-material";
+import { Article, Email, LocationCity } from "@mui/icons-material";
 import React from "react";
 import AravindhImage from "../assets/images/aearavindh-transparent.png";
+import AravindhResume from "../assets/files/Aravindh_AE.pdf";
 import Info from "../components/Info";
 import Skills from "../components/Skills";
 import "./Home.css";
@@ -19,6 +20,10 @@ function Home() {
           Icon={LocationCity}
           info="Thirparappu, Kanyakumari, Tamil Nadu, India"
         />
+        <a href={AravindhResume} className="home__download" download="Aravindh_AE">
+          <Article />
+          Download Resume
+        </a>
       </div>
     </div>
   );
