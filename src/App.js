@@ -17,10 +17,11 @@ function App() {
   const navLinkActiveStyles = ({ isActive }) =>
     isActive
       ? {
-          backgroundColor: "white",
+          backgroundColor: "#f5f5f5",
           color: "black",
           fontWeight: "600",
-          boxShadow: "0px 0px 5px black",
+          boxSizing: "border-box",
+          border: "5px groove black",
         }
       : {};
 
