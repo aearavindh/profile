@@ -31,6 +31,12 @@
   transition: font-size 1s;
 }
 
+@media only screen and (max-width: 600px) {
+  .app__link > p {
+    display: none;
+  }
+}
+
 .app__footer {
   height: 8vh;
   background-color: black;
