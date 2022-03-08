@@ -8,6 +8,12 @@
   .home {
       flex-direction: column;
   }
+  .home__left {
+    flex: 0.7 !important;
+  }
+  .home__right {
+    flex: 0.3 !important;
+  }
 }
 
 .home__left {
