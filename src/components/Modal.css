@@ -5,6 +5,7 @@
   inset: 0 0 0 0;
   cursor: pointer;
   transition: 3s;
+  z-index: 3;
 }
 
 .modal__box {

@@ -42,10 +42,6 @@
   }
 }
 
-.app__outlet {
-  z-index: 1;
-}
-
 .app__footer {
   height: 8vh;
   background-color: black;
