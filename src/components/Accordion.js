@@ -22,7 +22,7 @@ function Accordion({ Icon, body, children, percentage, cgpa }) {
         <p style={active ? { opacity: 1 } : { opacity: 0 }}>{body}</p>
         <div className="accordion__score">
           <CreditScore />
-          <p>{percentage ? percentage + "%" : cgpa + " CGPA"}</p>
+          {/* <p>{percentage ? percentage + "%" : cgpa + " CGPA"}</p> */}
         </div>
       </div>
     </div>

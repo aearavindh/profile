@@ -6,7 +6,7 @@ import "./Employment.css";
 function Employment() {
   const [modal, setModal] = useState(false);
   const [modalBody, setModalBody] = useState("");
-  const width = "35vw";
+  const width = "30vw";
   const height = "30vh";
 
   const onModalExit = () => {
@@ -31,7 +31,16 @@ function Employment() {
         height={height}
         onClick={() => {
           setModal(true);
-          setModalBody("Analyst at Deloitte (2021-present)");
+          setModalBody("Consultant at Deloitte (2021-2024)");
+        }}
+      />
+      <Tile
+        title="Verizon"
+        width={width}
+        height={height}
+        onClick={() => {
+          setModal(true);
+          setModalBody("Software Engineer III at Verizon (2024-present)");
         }}
       />
       {modal && <Modal body={modalBody} onExit={onModalExit} />}
